@@ -1,0 +1,22 @@
+<!--pages/index/detail.wxml-->
+<view class="container">
+  <view class="main">
+    <view wx:for="{{arrays}}" class="main_list">
+        <view class="item-img"><image src="{{item.imgUlist}}" class="ifont"></image></view>
+        <view class="item-inner">
+          <view class="item-title-row">{{item.message}}</view>
+          <view class="item-title-after">{{item.salary_unit_str}}</view>
+          <view class="item-title-col">{{item.company_nam}}</view>
+          <view class="item-title">
+              {{item.city_name}}
+              {{item.experience_str}}
+              {{item.education_str}}
+              {{item.job_type_str}}
+          </view>  
+          <view class="item-title-after-time">{{item.create_time}}</view>
+        </view>                 
+      </view> 
+     
+  </view>
+</view>
+

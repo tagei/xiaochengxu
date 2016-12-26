@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/car",
+    "pages/index/hot",
+    "pages/index/detail",
+    "pages/index/quan"
+  ],
+    "tabBar": {
+      "borderStyle":"white",
+      "selectedColor":"#f00",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"pages/images/shouye.jpg",
+      "selectedIconPath":"pages/images/shouye1.png"
+    }, 
+     {
+      "pagePath": "pages/index/quan",
+      "text": "实习",
+      "iconPath":"pages/images/gowu.jpg",
+      "selectedIconPath":"pages/images/gowu1.png"
+    },{
+      "pagePath": "pages/index/hot",
+      "text": "热门",
+      "iconPath":"pages/images/weike1.png",
+      "selectedIconPath":"pages/images/weike2.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTitleText": "小白",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  }
+}

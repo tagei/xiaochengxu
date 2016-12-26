@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="auto"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view  class="list">
+      <view wx:for="{{array}}" class="list-item">
+      <navigator  url="{{item.urlList}}" open-type="redirect"  hover-class="other-navigator-hover"> 
+        <image src="{{item.imgListUrls}}" class="icon"></image>{{item.message}}
+       </navigator>
+      </view>   
+  </view>
+  <view class="line"></view>
+  <view class="main">
+    <view wx:for="{{arrays}}" class="main_list">
+        <view class="item-img"><image src="{{item.imgUlist}}" class="ifont"></image></view>
+        <view class="item-inner">
+          <view class="item-title-row">{{item.message}}</view>
+          <view class="item-title-after">{{item.salary_unit_str}}</view>
+          <view class="item-title-col">{{item.company_nam}}</view>
+          <view class="item-title">
+              {{item.city_name}}
+              {{item.experience_str}}
+              {{item.education_str}}
+              {{item.job_type_str}}
+          </view>  
+          <view class="item-title-after-time">{{item.create_time}}</view>
+        </view>                 
+      </view> 
+     
+  </view>
+</view>

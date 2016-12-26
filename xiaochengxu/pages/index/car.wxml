@@ -1,0 +1,46 @@
+<!--pages/index/car.wxml-->
+<view class="container">
+  <view class="main">
+    <view wx:for="{{arrays}}" class="main_list">
+        <view class="item-img"><image src="{{item.imgUlist}}" class="ifont"></image></view>
+        <view class="item-inner">
+          <view class="item-title-row">{{item.message}}</view>
+          <view class="item-title-after">{{item.salary_unit_str}}</view>
+          <view class="item-title-col">{{item.company_nam}}</view>
+         
+        </view>                 
+      </view> 
+      <view wx:for="{{arrays}}" class="main_list1">
+        <view class="item-title">
+              <view class="item-title1">{{item.city_name}} </view>
+             <view class="item-title1"> {{item.experience_str}} </view>
+              <view class="item-title1">{{item.education_str}} </view>
+              <view class="item-title1">{{item.job_type_str}} </view>
+         </view>
+        </view> 
+  </view>
+  <view class="info">
+    <image src="{{img}}" class="img"></image>
+    <view class="info-name">
+        <view>{{name}}</view>
+        <view class="star" wx:for="{{imgUrls}}"><image src="{{item}}"></image></view>
+        <view class="text">{{text}}</view>
+    </view>
+  </view>
+  <view class="miao">
+    <view class="title">{{title}}</view>
+    <view class="ul" wx:for="{{lists}}">
+        <view classclass="lists">{{index}}、{{item.message}}</view>
+    </view>
+  </view>
+   <view class="miao">
+    <view class="title">{{address}}</view>
+    <view class="address-info">{{addressInfo}}</view>
+  </view>
+  <view class="btn">
+        <button type="warn"  hover-class="other-button-hover"> 沟通 </button>
+        <button type="primary"  bindtap="primary"> 发送简历 </button>
+</view>
+  
+</view>
+
